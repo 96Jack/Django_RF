@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'App',
+    'GApiView',
+    'MinxinApp',
+    'ViewSetApp',
+    'OnToMany',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +132,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # APPEND_SLASH=False
+
+# REST_FRAMEWORK = {
+#     # 认证
+#     'DEFAULT_AUTHENTICATION_CLASSES':(
+#         'rest_framework.authentication.BasicAuthentication',   # 基本认证： 表单认证
+#         'rest_framework.authentication.SessionAuthentication', # session认证
+#     ),
+#     # 权限
+#     'DEFAULT_PERMISSION_CLASSES':(
+#         'rest_framework.permissions.IsAuthenticated',
+#     )
+# }
